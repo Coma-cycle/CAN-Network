@@ -60,12 +60,10 @@ candump vcan0
 ```
 cansend vcan0 <can_id>#<hex_data_payload>
 ```
-using a python script to generate radom rpm engie and motor speed data, and sending it through a 
-simulated CAN.
+using a python script to generate radom rpm for the engie and random speed numbers for the vehicle, and sending it through a simulated CAN.
 
 since CAN is a protocol for electronic devices to talk to each other, 
-In a reall car the random speed data is generated using a speed sensor in car , and rpm could be
-calculated using sensors as well all going through an ECU unit via CAN to be controlled.
+In a real car the random speed data is generated using a speed sensor in car , and rpm could be calculated using sensors as well all going through an ECU unit via CAN to be controlled.
 
 the simulated result are ready now, i could use reall sensors to calculate an attribute , 
 and then use a spi to CAN controller to send it to an ECU or a simple black pill. 
